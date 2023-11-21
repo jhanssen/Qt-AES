@@ -505,7 +505,7 @@ QByteArray QAESEncryption::encode(const QByteArray &rawText, const QByteArray &k
         QByteArray alignedText(rawText);
 
         //Fill array with padding
-        alignedText.append(getPadding(rawText.size(), m_blocklen));
+        // alignedText.append(getPadding(rawText.size(), m_blocklen));
 
     switch(m_mode)
     {
